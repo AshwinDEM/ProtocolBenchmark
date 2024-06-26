@@ -19,7 +19,7 @@ async def echo(websocket, path):
         # await websocket.send("Message received!")
 
 async def main():
-    async with websockets.serve(echo, "localhost", 8765):
+    async with websockets.serve(echo, "172.20.10.2", 8765):
         await asyncio.Future()
 
 if __name__ == "__main__":
